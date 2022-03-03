@@ -1,8 +1,13 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Righteous&family=Sarala&display=swap');
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
 }
+
+
 
 .main-login{
     width: 100vw;
@@ -24,6 +29,11 @@ body{
 
 .left-login > h1{
     color: rgb(255, 112, 46);
+    font-size: 3vw;
+}
+
+.left-img{
+    width: 35vw;
 }
 
 .right-login{
@@ -102,3 +112,57 @@ body{
 .btn-login:hover{
     background-position: right;
 }
+
+@media only screen and (max-width: 950px){
+    .card-login{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .main-login{
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+
+    .left-login > h1{
+        display: none;
+    }
+
+    .left-login{
+        width: 100%;
+        height: auto;
+    }
+
+    .right-login{
+        width: 100%;
+        height: auto;
+    }
+
+    .left-img {
+        width: 50vh;
+    }
+
+    .card-login{
+        width: 90%;
+    }
+
+}
+
+@media only screen and (max-width: 400px){
+    .card-login{
+        width: 90%;
+        height: 100%;
+    }
+
+    .left-login{
+        width: 90%;
+        height: 100%;
+    }
+
+    .left-img{
+        width: 40vh;
+    }
+}
+
